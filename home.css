@@ -13,6 +13,11 @@
     cursor: pointer;
 }
 
+.rightnav a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
 .logo{
     display:flex;
     justify-content: center;
@@ -51,7 +56,6 @@
 }
 
 .rightnav{
-    
     width:30%;
     padding: 0 23px; 
     text-align:right;
@@ -211,7 +215,7 @@
     font-size: 36px;
 }
 .vl {
-    border-left: 6px solid green;
+    border-left: 6px solid #00a877;
     position: absolute;
     left: 30%;
     transform: translateY(-100%);

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins,sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #66cdaa;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+}
+
+.btn{
+    font-size: 20px;
+    padding: 7px 30px;
+    margin: 03px;
+    border-radius: 50px;
+    background: #00a877;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.logo img{
+    width:20%;
+    border:3px solid white;
+    border-radius: 50px;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightnav{
+    width:30%;
+    padding: 0 23px; 
+    text-align:right;
+}
+.rightnav a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.background{
+    background: rgba(0,0,0,0.7);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.zen{
+    background: #fff;
+    max-width: 600px;
+    width:90% ;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.zen h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #001e4d;
+    border-bottom: 1px solid #333;
+    padding-bottom: 25px;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    border-radius: 4px;
+    text-align:center;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.btn:hover:not([disabled]){
+    background-color: #001e4d;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct{
+    background: #ff9393;
+}
+
+.incorrect{
+    background: #9aeabc;
+}
+
+
+
+
