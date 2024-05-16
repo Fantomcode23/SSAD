@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat</title>
+    <link rel="stylesheet" href="videochat.css">
+</head>
+<body>
+    <nav class="navbar background ">
+        <ul class="nav-list">
+            <div class="logo"><img src="pic_1.jfif" alt="logo"></div>
+            <li><a href="" id="about" >About</a></li>
+            <li><a href="" id="contact" >Quiz</a></li>
+        </ul>
+        <div class="rightnav">
+                <button class="btn"><a href="home.html">Go to HomePage</a></button>
+        </div>  
+        
+    </nav>
+    <h1 class="session">Session</h1>
+    <div class="container">
+        <h2>User</h2>
+        <div class="videos">
+            <video id="localVideo" autoplay muted ></video>
+            <video id="remoteVideo" autoplay></video>
+        </div>
+        <div class="controls">
+            <button id="startButton">Start Video Chat</button>
+            <button id="hangupButton">Hang Up</button>
+        </div>
+        <h2>Admin</h2>
+        <div class="videos two">
+            <video id="localVideo2" autoplay muted ></video>
+            <video id="remoteVideo2" autoplay></video>
+        </div>
+        <div class="controls">
+            <button id="startButton2">Start Video Chat</button>
+            <button id="hangupButton2">Hang Up</button>
+        </div>
+
+    </div>
+    <script src="videochat.js"></script>
+</body>
+</html>
