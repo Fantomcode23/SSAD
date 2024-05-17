@@ -3,6 +3,10 @@
     padding:0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .navbar{
     display:flex;
     justify-content: center;
@@ -17,14 +21,16 @@
     text-decoration: none;
     color: #fff;
 }
-
+.sectionSubTag{
+    font-size: 1.5rem;
+}
 .logo{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo img{
+.logo video{
     width:20%;
     border:3px solid white;
     border-radius: 50px;
@@ -60,11 +66,8 @@
     padding: 0 23px; 
     text-align:right;
 }
-#home{
-    text-decoration: none;
-    color:white;
-}
-#about{
+
+#survey{
     text-decoration: none;
     color:white;
 }
@@ -76,16 +79,15 @@
     text-decoration: none;
     color:white;
 }
-#search{
-    padding:5px;
-    font-size:17px;
-    border:2px solid grey;
-    border-radius: 9px;
+#zen{
     text-decoration: none;
+    color:white;
+    font-size: 36px;
 }
 
+
 .background{
-    background: rgba(0,0,0,0.7) url('friend.jpeg');
+    background: rgba(0,0,0,0.7) url('final.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -161,8 +163,8 @@
     font-size: 20px;
     padding: 7px 30px;
     margin: 03px;
-    border-radius: 50px;
-    background: #00a877;
+    border-radius: 5px;
+    background: black;
     color: white;
     border: 2px solid white;
     cursor: pointer;
@@ -193,6 +195,7 @@
 .contact{
     background-color: #f6f5f4;
     height: 60vh;
+    padding-top: 30px;
 }
 .form{
     max-width: 82%;
@@ -214,18 +217,24 @@
     margin-left: 10%;
     font-size: 36px;
 }
-.vl {
-    border-left: 6px solid #00a877;
-    position: absolute;
-    left: 30%;
-    transform: translateY(-100%);
-    background-color: #f6f5f4;
-    height: 60vh;
+
+.social{
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 26px;
+    font-weight: 600;
 }
-
-
-
-
+.social img{
+    width: 10%;
+    border-radius: 4px;
+    padding: 10px;
+    align-items: center;
+    
+}
+.finalflex{
+    display: flex;
+}
 .text-footer{
     font-family: 'Ubuntu',sans-serif;
     text-align:center;
@@ -250,6 +259,11 @@
     height: 4px;
     margin: 5px 3px;
 }
+.line-1 h1{
+    margin-bottom:60vh;
+    transform: translate(66%,-46vh)
+}
+
 
 @media only screen and (max-width: 1244px){
     .nav-list{
@@ -295,8 +309,9 @@
     .text-big{
         text-align:center;
     }
-    .vl{
+    .social{
         display: none;
+        
     }
 }
 

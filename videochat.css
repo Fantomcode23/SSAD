@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
@@ -43,8 +47,8 @@ body {
     font-size: 20px;
     padding: 7px 30px;
     margin: 03px;
-    border-radius: 50px;
-    background: #00a877;
+    border-radius: 5px;
+    background: aliceblue;
     color: white;
     border: 2px solid white;
     cursor: pointer;
@@ -61,21 +65,8 @@ body {
     border:3px solid white;
     border-radius: 50px;
 }
-#home{
-    text-decoration: none;
-    color:white;
-}
-#about{
-    text-decoration: none;
-    color:white;
-}
-#services{
-    text-decoration: none;
-    color:white;
-}
-#contact{
-    text-decoration: none;
-    color:white;
+.logo video{
+    width:15%;
 }
 .background{
     background:black;

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Materials+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <video src="zENZONE.mp4" alt="logo">
+            </a>
+            <h2>ZENZONE</h2>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+    <!-- Popup Form -->
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">X</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please login using your personal information</p>
+            </div>
+            <div class="form-content login">
+                <h2>LOGIN</h2>
+                <form action="home.html" method="get">
+                    <div class="input-field">
+                        <input type="email" id="email" class="form-control" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass">Forgot password?</a>
+                    <button type="submit" value="Login">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account? 
+                    <a href="#" id="signup-link" >Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community , please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="" method="post">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create Password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#">Terms & conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="background1">
+        <p class="text-footer">
+            Copyright &copy; 2027 - www.zenzone.com - All rights reserved
+        </p>
+    </footer>
+    <script src="login.js" defer></script>
+
+</body>
+</html>

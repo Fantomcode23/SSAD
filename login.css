@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("home2.jpg") center / cover no-repeat;
+}
+header{
+    position:fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.navbar{
+    padding: 22px 3px;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar .logo VIDEO{
+    width:  80px;
+    border-radius: 50%;
+}
+
+.navbar .logo h2{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+.navbar .links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.navbar .links a:hover{
+    color: aqua;
+}
+
+.navbar button{
+    border:none;
+    outline: none;
+    font-size: 1rem;
+    color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #fff;
+}
+.blur-bg-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(5px);
+    transition: 0.1s ease;
+}
+
+.show-popup .blur-bg-overlay{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.form-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background: #fff;
+    border: 2px solid #fff;
+    transform: translate(-50%,-50%);
+}
+
+.show-popup .form-popup{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.1s;
+}
+
+.form-popup .close-btn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #717171;
+    cursor: pointer;
+
+}
+.form-box{
+    display: flex;
+}
+
+.form-details{
+    max-width: 330px;
+}
+.form-box .form-details{
+    max-width: 330px;
+    width: 100%;
+    background: #717171;
+    display: flex;
+    padding: 0 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.form-box h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-box .form-content{
+    width: 100%;
+    padding: 35px;
+}
+form .input-field{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+form .input-field input{
+    width: 100%;
+    height:100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    border: 1px solid #717171;
+}
+
+.input-field input:focus{
+    border-color: orange;
+}
+
+.input-field input:is(:focus, :valid){
+    padding: 16px 15px 0;
+}
+form .input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #717171;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ label {
+    color: orange;
+    font-size: 0.75rem;
+    transform: translateY(-120%);
+
+}
+
+.form-box a{
+    color: orange;
+    text-decoration: none;
+}
+
+.form-box a:hover{
+    text-decoration: underline;
+}
+.form-box :where(.forgot-pass, .policy-text){
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+
+}
+form button{
+    width:100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px ;
+    border-radius: 3px;
+    margin: 25px 0;
+    color: #fff;
+    cursor: pointer;
+    background:orange ;
+    transition: 0.2s ease;
+}
+form button:hover{
+    background: orange;
+}
+.form-box .bottom-link{
+    text-align: center;
+}
+
+.form-popup .signup,
+.form-popup.show-signup .login{
+    display: none;
+}
+.form-popup.show-signup .signup{
+    display: flex;
+}
+.signup .policy-text{
+    display:flex;
+    align-items: center;
+}
+
+.signup .policy-text input{
+    width: 14px;
+    height:14px;
+    margin-right: 7px;
+}
+.background1{
+    background: rgba(0,0,0,0.7);
+    background-size: cover;
+    background-blend-mode: darken;
+    text-align: center;
+    transform: translate(0,720px);
+}
+
+
+@media (max-width: 809px){
+    .navbar .logo img{
+        display: none;
+    }
+
+    .navbar .links{
+        display: none;
+    }
+
+    .navbar .logo h2{
+        font-size: 1.5rem;
+    }
+
+    .navbar .login-btn{
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+}
+
+@media (max-width: 760px){
+    .form-popup{
+        width: 95%;
+    }
+
+    .form-box .form-details{
+        display: none;
+    }
+    .form-box .form-content{
+        padding: 30px 20px;
+    }
+}
+
+
+
+
+
+

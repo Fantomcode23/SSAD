@@ -91,7 +91,7 @@ const questions = [
         ]
     },
     {
-        question : " Have you experienced changes in your appetite, weight, or sleep patterns during these mood swings?",
+        question : " Do you feel disconnected from your surroundings or yourself at times?",
         answers: [
             {text: "Yes",correct: true },
             {text: "No",correct: false },
@@ -163,7 +163,7 @@ function selectAnswer(e){
 }
 function showScore(){
     resetState();
-    questionElement.innerHTML = `You have ${score} problems out of 15`
+    questionElement.innerHTML = `Thank You For Your Response. `
     nextButton.innerHTML = "Give Response Again"
     nextButton.style.display = "block";
 }
